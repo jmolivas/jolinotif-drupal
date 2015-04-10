@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains jolinotif.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jolinotif_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the jolinotif module.
+    case 'help.page.jolinotif':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('JoliNotif library integration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jolinotif_theme() {
+  $theme = [];
+
+  return $theme;
+}

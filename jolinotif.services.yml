@@ -1,0 +1,6 @@
+services:
+  logger.jolinotif:
+    class: Drupal\jolinotif\Logger\JolinotifLog
+    arguments: ['@logger.log_message_parser']
+    tags:
+      - { name: logger }

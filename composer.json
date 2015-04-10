@@ -1,0 +1,8 @@
+{
+  "name": "drupal/jolinotif",
+  "description": "Integrates the JoliNotif library into Drupal",
+  "type": "drupal-module",
+  "require": {
+    "jolicode/jolinotif": "1.0.1"
+  }
+}
